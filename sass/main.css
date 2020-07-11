@@ -238,11 +238,77 @@ body {
 }
 
 .card {
-  background-color: #454b51;
   -webkit-perspective: 150rem;
           perspective: 150rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card__side {
+  height: 51rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  /*hide the backpart of an element (can't see the card from the backpart)*/
   border-radius: 5px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
+}
+
+.card__side--front {
+  background-color: #454b51;
+}
+
+.card__side--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  /*before we hover the card, the back is already flipped*/
+}
+
+.card__side--back-1, .card__side--back-2, .card__side--back-3, .card__side--back-4, .card__side--back-5, .card__side--back-6 {
+  background-size: cover;
+}
+
+.card__side--back-1 {
+  background-image: url(/Content/tattoo-0.jpg);
+}
+
+.card__side--back-2 {
+  background-image: url(/Content/tattoo-1.jpg);
+}
+
+.card__side--back-3 {
+  background-image: url(/Content/tattoo-2.jpg);
+}
+
+.card__side--back-4 {
+  background-image: url(/Content/tattoo-3.jpg);
+}
+
+.card__side--back-5 {
+  background-image: url(/Content/dotting-01.jpg);
+}
+
+.card__side--back-6 {
+  background-image: url(/Content/tattoo-5.jpg);
+}
+
+.card:hover .card__side--front {
+  /*when we over the card, we want the FRONT SIDE  to transform*/
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  /*come back to initial stage and become visible*/
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
 }
 
 .card__picture {
@@ -317,6 +383,19 @@ body {
 .btn--primary:hover {
   -webkit-animation: BounceBtn .4s;
           animation: BounceBtn .4s;
+}
+
+.btn--white {
+  background-color: black;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.btn--white:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .artist {
