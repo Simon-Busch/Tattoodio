@@ -1,0 +1,28 @@
+.btn {
+
+    &, 
+    &:link,
+    &:visited {
+    font-size: 1.6rem;
+    letter-spacing: .4rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1rem 4rem;
+    transition: all 0.2s;
+    position:relative;
+    cursor: pointer;
+    }
+
+    &--primary {
+        background-color: $color-black;
+        border-radius: 5rem;
+        animation: moveInleft 1s ease-in;
+
+        &:hover {
+            animation: BounceBtn .4s;
+        }
+    }
+}

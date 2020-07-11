@@ -1,0 +1,25 @@
+.heading-primary {
+    text-transform: uppercase;
+    display:block;
+    backface-visibility: hidden;
+
+    &--main {
+        letter-spacing: 4rem;
+        font-size: 4.5rem;
+        display: block;
+        font-weight: 200;
+        animation-name: moveInBottom;
+        animation-duration: 2s;
+        margin-left: 3rem;
+        margin-bottom: -1rem;
+    }
+
+    &--sub {
+        font-size: 2.5rem;
+        letter-spacing: 1rem;
+        display: block;
+        font-weight: 400;
+        animation-name: moveInTop;
+        animation-duration: 2s;
+    }
+}

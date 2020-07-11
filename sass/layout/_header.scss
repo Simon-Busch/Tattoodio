@@ -1,0 +1,33 @@
+.header {
+    height: 90vh;
+    position: relative;
+    background-image: linear-gradient(to bottom right, rgba($color-grey-dark-2,.3), rgba($color-grey-dark-3,.3));
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__logobox {
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 10rem;
+        width: 10rem;
+
+        &--logo {
+            height:8rem;
+            width:auto;
+            transition: all 1s;
+
+            &:hover {
+                transform: rotate(20deg);
+            }
+        }
+    }
+
+    &__description {
+        position: absolute;
+        top:40%; 
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
