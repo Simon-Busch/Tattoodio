@@ -1,0 +1,12 @@
+.artist {
+    padding:10rem 2rem;
+    display:grid;
+    background-color: $color-grey-light-2;
+    grid-template-rows: repeat(2,51rem);
+    grid-template-columns: repeat(3,1fr);
+
+    grid-gap: 4rem;
+    
+
+
+}

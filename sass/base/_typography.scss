@@ -23,3 +23,13 @@
         animation-duration: 2s;
     }
 }
+
+.heading-tertiary {
+    font-size: 3rem;
+    color:$color-white;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}

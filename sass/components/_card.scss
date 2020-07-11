@@ -1,0 +1,61 @@
+.card {
+    background-color: $color-primary;
+    perspective:150rem;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    &__side {
+
+    }
+
+    &__picture {
+        height: 26rem;
+        width:100%;
+        background-size: cover;
+        
+        margin-bottom: 1rem;
+        
+
+        &--1{
+            background-image: url(/Content/artist-6.jpg);
+        }
+
+        &--2{
+            background-image: url(/Content/artist-2.jpg);
+        }
+
+        &--3{
+            background-image: url(/Content/artist-1.jpg);
+        }
+
+        &--4{
+            background-image: url(/Content/artist-3.jpg);
+        }
+
+        &--5{
+            background-image: url(/Content/artist-5.jpg);
+        }
+
+        &--6{
+            background-image: url(/Content/artist-4.jpg);
+        }
+    }
+
+    &__details {
+        ul {
+            width: 80%;
+            list-style: none;
+            margin: 0 auto;
+
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+}
