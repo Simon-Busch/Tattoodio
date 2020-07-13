@@ -24,6 +24,21 @@
     }
 }
 
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .4rem;
+    color: $color-primary;
+    transition: all .6s ease;
+        
+    &:hover {
+        transform: skewY(-7deg) scale(1.03);
+        text-shadow: 0.5rem 3rem 3rem rgba($color-black, .5);
+    }
+    
+}
+
 .heading-tertiary {
     font-size: 3rem;
     color:$color-white;

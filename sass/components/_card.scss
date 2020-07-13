@@ -6,7 +6,7 @@
     
     &__side {
         height: 51rem;
-        transition: all 1s ease;
+        transition: all 1s ease-in-out;
         position:absolute;
         top:0;
         left:0;
@@ -15,7 +15,6 @@
         border-radius: 5px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
         overflow: hidden;
-
 
         &--front {
             background-color: $color-primary;

@@ -11,31 +11,47 @@
     text-transform: uppercase;
     display: inline-block;
     padding: 1rem 4rem;
-    transition: all 0.2s;
+    //transition: all 0.2s;
     position:relative;
     cursor: pointer;
     }
 
-    &--primary {
-        background-color: $color-black;
+    &--black {
+        background-color: $color-black !important;
+        border: 1px solid $color-white;
         border-radius: 5rem;
+        transition: all 1s;
         animation: moveInleft 1s ease-in;
+        margin-top: 8rem;
 
         &:hover {
-            animation: BounceBtn .4s;
+            animation: BounceBtn .6s;
         }
     }
 
-    &--white {
-        background-color: $color-black;
+    &--primary {
+        background-color: $color-primary;
         border: 1px solid $color-white;
         border-radius: 100px;
-        transition: all 2s ease;
-
-
+        transition: all .2s ease;
+        margin-top: 17rem;
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
+        }
+    }
+
+    &--secondary {
+        color: $color-primary !important;
+        margin-top: 10rem;
+        transition: all .5s !important;
+        animation: moveInleft 1s;
+
+        &:hover {
+            background-color: $color-primary-light;
+            color: $color-white !important;
+            border-radius: 100px;
+            transform: scale(1.1);
         }
     }
 }
