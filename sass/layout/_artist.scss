@@ -6,7 +6,7 @@
     &__box {
         display:grid;
         grid-template-rows: repeat(2,51rem);
-        grid-template-columns: repeat(auto-fit,(minmax(300px,1fr)));
+        grid-template-columns: repeat(auto-fit,(minmax(350px,1fr)));
         grid-gap: 4rem;
         grid-auto-rows: 51rem;
     }

@@ -11,32 +11,30 @@
 </head>
 
 <body>
+    <header class="header u-center-text">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <!--better to have both these format to make sure cross browers -->
+                <source src="Content/video/cover-video.mp4" type="video/mp4">
+                Your brower is not supported! 
+            </video>
+        </div>
+
+        <div class="header__logobox">
+            <img src="Content/logo/Logo-black.png" alt="tattoodio logo" class="header__logobox--logo">
+        </div>
+
+        <div class="header__description">
+            <h1 class="heading-primary u-margin-bottom-lg">
+                <span class="heading-primary--main">Tattoodio</span>
+                <span class="heading-primary--sub">Find your artist</span>
+            </h1>
+            <a href="#" class="btn btn--black">Ink me</a>
+        </div>
+    </header>
 
     <main>
-        <header class="header u-center-text">
-            <div class="bg-video">
-                <video class="bg-video__content" autoplay muted loop>
-                    <!--better to have both these format to make sure cross browers -->
-                    <source src="Content/video/cover-video.mp4" type="video/mp4">
-                    Your brower is not supported! 
-                </video>
-            </div>
-
-            <div class="header__logobox">
-                <img src="Content/logo/Logo-black.png" alt="tattoodio logo" class="header__logobox--logo">
-            </div>
-
-            <div class="header__description">
-                <h1 class="heading-primary u-margin-bottom-lg">
-                    <span class="heading-primary--main">Tattoodio</span>
-                    <span class="heading-primary--sub">Find your artist</span>
-                </h1>
-                <a href="#" class="btn btn--black">Ink me</a>
-            </div>
-        </header>
-
         <section class="artist u-center-text">
-
             <div class="artist__heading">
                 <h2 class="heading-secondary">Most popular artists</h2>
             </div>
@@ -265,6 +263,98 @@
                 </div>
             </div>
         </section>
+
+        <section class="galery">
+            <div class="galery__heading">
+                <h2 class="heading-secondary">Discover some projects of the team</h2>
+            </div>
+
+            <div class="galery__box">
+                <div class="galery__box--1">
+                    <img src="Content/Galery/galery-3.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--2">
+                    <img src="Content/Galery/galery-1.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--3">
+                    <img src="Content/Galery/galery-4.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--4">
+                    <img src="Content/Galery/galery-0.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--5">
+                   <img src="Content/Galery/galery-2.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--6">
+                    <img src="Content/Galery/galery-5.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--7">
+                    <img src="Content/Galery/galery-12.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--8">
+                   <img src="Content/Galery/galery-7.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--9">
+                   <img src="Content/Galery/galery-10.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--10">
+                   <img src="Content/Galery/galery-8.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+                <div class="galery__box--11">
+                   <img src="Content/Galery/galery-16.jpg" alt="tattoo artist" class="galery_photo">
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <div class="pricing__heading">
+                <h2 class="heading-secondary">Pricing</h2>
+            </div>
+            <div class="pricing__box">
+                <div class="pricing__box--1">
+                    <img src="Content/Galery/pricing-small.jpg" alt="small tattoo photo" class="pricing__photo">
+                    <h4 class="heading-tertiary">Small size</h4>
+                    <ul class="pricing__list">
+                        <li class="pricing__list"><ion-icon name="resize-outline"class="pricing__icon"></ion-icon>Size max : 5 x 5 cm</li>
+                        <li class="pricing__list"><ion-icon name="hourglass-outline"class="pricing__icon"></ion-icon>Time max : 30 min</li>
+                        <li class="pricing__list"><ion-icon name="color-palette-outline" class="pricing__icon"></ion-icon>Color: black and white</li>
+                    </ul>
+                </div>
+
+                <div class="pricing__box--2">
+                    <img src="Content/Galery/pricing-medium.jpg" alt="medium tattoo photo" class="pricing__photo">
+                    <h4 class="heading-tertiary">Medium size</h4>
+                    <ul class="pricing__list">
+                        <li class="pricing__list"><ion-icon name="resize-outline"class="pricing__icon"></ion-icon>Size max : 20 x 20 cm</li>
+                        <li class="pricing__list"><ion-icon name="hourglass-outline"class="pricing__icon"></ion-icon>Time max : 3 hours</li>
+                        <li class="pricing__list"><ion-icon name="color-palette-outline" class="pricing__icon"></ion-icon>Colors or Black & white</li>
+                    </ul>
+                </div>
+
+                <div class="pricing__box--3">
+                    <img src="Content/Galery/pricing-large.jpg" alt="large tattoo photo" class="pricing__photo">
+                    <h4 class="heading-tertiary">Large size</h4>
+                    <ul class="pricing__list">
+                        <li class="pricing__list"><ion-icon name="resize-outline"class="pricing__icon"></ion-icon>No max size</li>
+                        <li class="pricing__list"><ion-icon name="hourglass-outline"class="pricing__icon"></ion-icon>TNo max time</li>
+                        <li class="pricing__list"><ion-icon name="color-palette-outline" class="pricing__icon"></ion-icon>Colors or Black & white</li>
+                    </ul>
+                </div>
+
+                <div class="pricing__box--4">
+                    <img src="Content/Galery/pricing-traditionnal.jpg" alt="traditional tattoo photo" class="pricing__photo">
+                    <h4 class="heading-tertiary"> Traditional</h4>
+                    <ul class="pricing__list">
+                        <li class="pricing__list"><ion-icon name="resize-outline"class="pricing__icon"></ion-icon>No max size</li>
+                        <li class="pricing__list"><ion-icon name="hourglass-outline"class="pricing__icon"></ion-icon>TNo max time</li>
+                        <li class="pricing__list"><ion-icon name="color-palette-outline" class="pricing__icon"></ion-icon>Colors or Black & white</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
     </main>
 
 
