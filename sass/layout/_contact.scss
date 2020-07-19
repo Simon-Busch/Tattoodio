@@ -1,0 +1,31 @@
+.contact {
+    
+    margin-top: -9rem;
+    padding-bottom: 20rem;
+    background-color: $color-primary;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+
+    &__box {
+        display: grid;
+        grid-template-rows: 60vh;
+        grid-template-columns: [empty-start]1fr[empty-end form-start]50%[form-end picture-start] 40%[picture-end side-start] 1fr [side-end] ;
+        
+        &--form {
+            background-color: blue;
+            grid-column: form-start / form-end;
+            
+        }
+
+        &--picture {
+            background-color:pink;
+            grid-column: picture-start/ picture-end;
+        }
+    }
+
+    .form__photo {
+        width:100%;
+        height:100%;
+            overflow: hidden;
+    }
+}

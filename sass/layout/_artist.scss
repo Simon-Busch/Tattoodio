@@ -1,12 +1,14 @@
 .artist {
-    padding:10rem 2rem;
+    padding:11rem 7rem;
     background-color: $color-grey-light-2;
-    padding-bottom: 15rem;
+    margin-top:-10rem;
+    margin-bottom:-6.5rem;
+
 
     &__box {
         display:grid;
-        grid-template-rows: repeat(2,51rem);
-        grid-template-columns: repeat(auto-fit,(minmax(350px,1fr)));
+        //grid-template-rows: repeat(2,51rem);
+        grid-template-columns: repeat(auto-fit,(minmax(30rem,1fr)));
         grid-gap: 4rem;
         grid-auto-rows: 51rem;
     }

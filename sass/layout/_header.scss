@@ -2,10 +2,9 @@
     height: 90vh;
     position: relative;
     background-size: cover;
-    background-image: linear-gradient(to bottom right, rgba($color-grey-dark-2,.3), rgba($color-grey-dark-3,.3));
-    /*
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);*/
+    background-image: linear-gradient(to bottom right, rgba($color-grey-dark-2,.9), rgba($color-grey-dark-3,.9));
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     background-position: top;
 
     &__logobox {
