@@ -22,16 +22,9 @@
 
 */
 
-            
-        
-
-    
-    
-
-
     &__box {
         //z-index: 2;
-        padding: 2rem 5rem 0rem 5rem;
+        padding: 0 3vw;
         //height:50rem;
 
         display:grid;
@@ -56,7 +49,7 @@
     .box {
         text-align: center;
         background-color: rgba($color-primary-light,.7);
-        border-radius: 10px;
+        //border-radius: 5px;
         height: 30rem;
         display:block;
     }

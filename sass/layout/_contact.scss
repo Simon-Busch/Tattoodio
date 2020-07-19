@@ -2,7 +2,7 @@
     
     margin-top: -9rem;
     padding-bottom: 20rem;
-    background-color: $color-primary;
+    background-color: $color-grey-light-2;
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
             clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 
@@ -12,7 +12,7 @@
         grid-template-columns: [empty-start]1fr[empty-end form-start]50%[form-end picture-start] 40%[picture-end side-start] 1fr [side-end] ;
         
         &--form {
-            background-color: blue;
+            background-color: $color-primary-light;
             grid-column: form-start / form-end;
             
         }
