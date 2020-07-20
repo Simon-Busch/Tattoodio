@@ -1,31 +1,48 @@
 .contact {
     
-    margin-top: -9rem;
-    padding-bottom: 20rem;
+    margin-top: -9.5rem;
+    padding-bottom: 10rem;
     background-color: $color-grey-light-2;
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 
     &__box {
         display: grid;
-        grid-template-rows: 60vh;
+        grid-template-rows: 70vh;
         grid-template-columns: [empty-start]1fr[empty-end form-start]50%[form-end picture-start] 40%[picture-end side-start] 1fr [side-end] ;
         
+
         &--form {
             background-color: $color-primary-light;
             grid-column: form-start / form-end;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+            display:flex;
+            flex-direction: column;
             
         }
 
         &--picture {
             background-color:pink;
             grid-column: picture-start/ picture-end;
+            overflow: hidden;
+            
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
     }
 
     .form__photo {
         width:100%;
         height:100%;
-            overflow: hidden;
+        //overflow: hidden;
+        filter: blur(2px);
+        transition: all .4s;
+        
+
+        &:hover {
+            filter:none;
+        }
     }
 }

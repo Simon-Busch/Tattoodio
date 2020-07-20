@@ -31,7 +31,8 @@
         &--1,&--2,&--3,&--4{
             background-color: $color-primary-dark;
             transition: all .5s;
-
+            overflow: hidden;
+            
             &:hover {
                 transform: scale(1.03) rotate(1deg);
             }
