@@ -389,27 +389,27 @@ body {
 }
 
 .card__side--back-1 {
-  background-image: url(Content/tattoo-0.jpg);
+  background-image: url(../../Content/tattoo-0.jpg);
 }
 
 .card__side--back-2 {
-  background-image: url(Content/tattoo-1.jpg);
+  background-image: url(../../Content/tattoo-1.jpg);
 }
 
 .card__side--back-3 {
-  background-image: url(Content/tattoo-2.jpg);
+  background-image: url(../../Content/tattoo-2.jpg);
 }
 
 .card__side--back-4 {
-  background-image: url(Content/tattoo-3.jpg);
+  background-image: url(../../Content/tattoo-3.jpg);
 }
 
 .card__side--back-5 {
-  background-image: url(Content/tattoo-4.jpg);
+  background-image: url(../../Content/tattoo-4.jpg);
 }
 
 .card__side--back-6 {
-  background-image: url(Content/tattoo-5.jpg);
+  background-image: url(../../Content/tattoo-5.jpg);
 }
 
 .card:hover .card__side--front {
@@ -432,27 +432,27 @@ body {
 }
 
 .card__picture--1 {
-  background-image: url(Content/artist-6.jpg);
+  background-image: url(../../Content/artist-6.jpg);
 }
 
 .card__picture--2 {
-  background-image: url(Content/artist-2.jpg);
+  background-image: url(../../Content/artist-2.jpg);
 }
 
 .card__picture--3 {
-  background-image: url(Content/artist-1.jpg);
+  background-image: url(../../Content/artist-1.jpg);
 }
 
 .card__picture--4 {
-  background-image: url(Content/artist-3.jpg);
+  background-image: url(../../Content/artist-3.jpg);
 }
 
 .card__picture--5 {
-  background-image: url(Content/artist-5.jpg);
+  background-image: url(../../Content/artist-5.jpg);
 }
 
 .card__picture--6 {
-  background-image: url(Content/artist-4.jpg);
+  background-image: url(../../Content/artist-4.jpg);
 }
 
 .card__details ul {
