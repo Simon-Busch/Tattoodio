@@ -389,27 +389,27 @@ body {
 }
 
 .card__side--back-1 {
-  background-image: url(/Content/tattoo-0.jpg);
+  background-image: url(Content/tattoo-0.jpg);
 }
 
 .card__side--back-2 {
-  background-image: url(/Content/tattoo-1.jpg);
+  background-image: url(Content/tattoo-1.jpg);
 }
 
 .card__side--back-3 {
-  background-image: url(/Content/tattoo-2.jpg);
+  background-image: url(Content/tattoo-2.jpg);
 }
 
 .card__side--back-4 {
-  background-image: url(/Content/tattoo-3.jpg);
+  background-image: url(Content/tattoo-3.jpg);
 }
 
 .card__side--back-5 {
-  background-image: url(/Content/tattoo-4.jpg);
+  background-image: url(Content/tattoo-4.jpg);
 }
 
 .card__side--back-6 {
-  background-image: url(/Content/tattoo-5.jpg);
+  background-image: url(Content/tattoo-5.jpg);
 }
 
 .card:hover .card__side--front {
@@ -432,27 +432,27 @@ body {
 }
 
 .card__picture--1 {
-  background-image: url(/Content/artist-6.jpg);
+  background-image: url(Content/artist-6.jpg);
 }
 
 .card__picture--2 {
-  background-image: url(/Content/artist-2.jpg);
+  background-image: url(Content/artist-2.jpg);
 }
 
 .card__picture--3 {
-  background-image: url(/Content/artist-1.jpg);
+  background-image: url(Content/artist-1.jpg);
 }
 
 .card__picture--4 {
-  background-image: url(/Content/artist-3.jpg);
+  background-image: url(Content/artist-3.jpg);
 }
 
 .card__picture--5 {
-  background-image: url(/Content/artist-5.jpg);
+  background-image: url(Content/artist-5.jpg);
 }
 
 .card__picture--6 {
-  background-image: url(/Content/artist-4.jpg);
+  background-image: url(Content/artist-4.jpg);
 }
 
 .card__details ul {
@@ -780,6 +780,7 @@ body {
   margin-bottom: -6.5rem;
   /*= 1360px*/
   /*= 750px*/
+  /*= 600px*/
 }
 
 @media only screen and (max-width: 85em) {
@@ -791,6 +792,12 @@ body {
 @media only screen and (max-width: 46.88em) {
   .artist {
     margin-bottom: -14rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .artist {
+    margin-bottom: -10rem;
   }
 }
 
@@ -842,8 +849,9 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .benefits {
-    -webkit-clip-path: none;
-    clip-path: none;
+    padding-top: 6rem;
+    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   }
 }
 
@@ -874,6 +882,27 @@ body {
   background-color: rgba(168, 171, 173, 0.7);
   height: 30rem;
   display: block;
+  /*= 1020px*/
+  /*= 600px*/
+  /*= 420*/
+}
+
+@media only screen and (max-width: 63.75em) {
+  .benefits .box {
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .benefits .box {
+    height: 21rem;
+  }
+}
+
+@media only screen and (max-width: 26.25em) {
+  .benefits .box {
+    height: 19rem;
+  }
 }
 
 .contact {
@@ -894,8 +923,9 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .contact {
-    -webkit-clip-path: none;
-    clip-path: none;
+    -webkit-clip-path: polygon(5%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -8rem;
   }
 }
 
@@ -1211,8 +1241,8 @@ body {
 @media only screen and (max-width: 37.5em) {
   .header {
     height: 70vh;
-    -webkit-clip-path: none;
-    clip-path: none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   }
 }
 
@@ -1228,6 +1258,8 @@ body {
   left: 0;
   height: 10rem;
   width: 10rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 
 .header__logobox--logo {
@@ -1259,8 +1291,8 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 4rem;
+  right: 4rem;
   border-radius: 50%;
   z-index: 2000;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -1272,8 +1304,8 @@ body {
 
 @media only screen and (max-width: 46.88em) {
   .navigation__button {
-    top: 2rem;
-    right: 2rem;
+    top: 1.8rem;
+    right: 1.8rem;
   }
 }
 
@@ -1283,8 +1315,8 @@ body {
   border-radius: 50%;
   position: fixed;
   /*won't change  position as we scroll the page*/
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 4.5rem;
+  right: 4.5rem;
   background-image: radial-gradient(#a8abad, #646d76);
   z-index: 1000;
   -webkit-transition: -webkit-transform 1.3s cubic-bezier(0.83, 0, 0.17, 1);
@@ -1438,8 +1470,9 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .pricing {
-    -webkit-clip-path: none;
-    clip-path: none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    margin-top: -2rem;
   }
 }
 

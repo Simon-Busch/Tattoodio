@@ -9,8 +9,10 @@
     }
 
     @include respond(phone) {
-        -webkit-clip-path:none;
-        clip-path: none;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
+        margin-top:-2rem;
     }
     
 

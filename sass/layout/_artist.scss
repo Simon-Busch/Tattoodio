@@ -12,6 +12,10 @@
         margin-bottom: -14rem;
     }
 
+    @include respond(phone) {
+        margin-bottom:-10rem;
+    }
+
 
     &__box {
         display:grid;

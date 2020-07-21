@@ -11,8 +11,9 @@
     }
 
     @include respond(phone) {
-        -webkit-clip-path:none;
-        clip-path: none;
+        padding-top:6rem;
+        -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
     }
     
    /* &__bg-img{
@@ -63,5 +64,17 @@
         //border-radius: 5px;
         height: 30rem;
         display:block;
+
+        @include respond(tab-land) {
+            height: 25rem;
+        }
+
+        @include respond(phone) {
+            height: 21rem;
+        }
+
+        @include respond(small-phone) {
+            height: 19rem;
+        }
     }
 }

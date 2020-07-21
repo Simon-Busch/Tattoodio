@@ -10,8 +10,8 @@
         height:7rem; 
         width:7rem;
         position: fixed;
-        top:6rem; 
-        right:6rem;
+        top:4rem; 
+        right:4rem;
         border-radius: 50%;
         z-index: 2000; 
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -19,9 +19,10 @@
         cursor: pointer;
 
         @include respond(tab-port) {
-            top:2rem;
-            right: 2rem;
+            top:1.8rem;
+            right: 1.8rem;
         }
+
     }
     
     &__background {
@@ -29,8 +30,8 @@
         width:6rem;
         border-radius: 50%;
         position:fixed; /*won't change  position as we scroll the page*/
-        top:6.5rem;
-        right:6.5rem;
+        top:4.5rem;
+        right:4.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);  
         z-index:1000;
         transition: transform 1.3s cubic-bezier(0.83, 0, 0.17, 1);
