@@ -7,6 +7,18 @@
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     background-position: top;
 
+    @include respond(phone) {
+        height:70vh;
+        -webkit-clip-path:none;
+        clip-path: none;
+    }
+
+    @include respond(small-phone) {
+        height:50vh;
+    }
+
+    
+
     &__logobox {
         position: absolute;
         top:0;

@@ -15,7 +15,28 @@
             font-weight: 400;
             text-transform: uppercase;
             transition: all .5s;
+            @include respond(largest) {
+                margin-left: 8rem;
+            }
+
+            @include respond(tab-land) {
+                margin-left: 10rem;
+            }
+
+            @include respond(tab-medium) {
+                margin-left: 7rem;
+            }
+
+            @include respond(tab-port) {
+                margin-left: 7rem;
+            }
+
+            @include respond(small-phone) {
+                margin-left:20rem;
+            }
         }
+
+        
 
         &__input {
             color:$color-primary;
@@ -30,6 +51,14 @@
             transition: .5s;
             margin: 0 auto;
             width: 40rem;
+
+            @include respond(tab-port) {
+                width:27rem;
+            }
+
+            @include respond(small-phone) {
+                width:30rem;
+            }
 
             &:focus{
                 outline:none;
@@ -55,10 +84,24 @@
 
         &__radio {
             &-group {
-                padding-left:10rem;
+                padding-left:5rem;
                 width: 40%;
                 display: inline-block;
 
+                @include respond(tab-medium) {
+                    padding-left: 3rem;
+                }
+
+                @include respond(tab-port) {
+                    width: 80%;
+                    margin: 0 auto;
+                    display:flex;
+                }
+
+                @include respond(small-phone) {
+                    width: 30%;
+                    display: inline-block;
+                }
             }
             
             &-input {
@@ -77,6 +120,11 @@
                 &:hover {
                     color:$color-primary;
                     font-weight: 400;
+                }
+
+                @include respond(tab-port) {
+                    align-self: center;
+                    justify-self: center;
                 }
             }
 
@@ -113,6 +161,10 @@
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
+
+            @include respond(largest) {
+                margin-top:2rem;
+            }
             
             .label__textarea {
                 font-size:1.4rem;

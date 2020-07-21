@@ -12,6 +12,10 @@
         animation-duration: 2s;
         margin-left: 3rem;
         margin-bottom: -1rem;
+
+        @include respond(small-phone) {
+            letter-spacing: 1rem;
+        }
     }
 
     &--sub {
@@ -21,6 +25,10 @@
         font-weight: 400;
         animation-name: moveInTop;
         animation-duration: 2s;
+
+        @include respond(small-phone) {
+            letter-spacing: .2rem;
+        }
     }
 }
 

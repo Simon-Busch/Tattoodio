@@ -4,6 +4,14 @@
     margin-top:-10rem;
     margin-bottom:-6.5rem;
 
+    @include respond(largest) {
+        margin-bottom:-10rem;
+    }
+
+    @include respond(tab-port) {
+        margin-bottom: -14rem;
+    }
+
 
     &__box {
         display:grid;

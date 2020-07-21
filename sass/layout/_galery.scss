@@ -8,6 +8,14 @@
     overflow: hidden;
     padding-bottom: 8rem;
 
+    @include respond(largest) {
+        padding-bottom: 12rem;
+    }
+
+    @include respond(tab-port) {
+        margin-top:-14rem;
+    }
+
     .galery__heading{
         padding-top: 5rem;
     }

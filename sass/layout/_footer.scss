@@ -7,7 +7,7 @@
 
     &__copyright {
         align-self: center;
-        justify-self: center;
+        justify-self: left;
 
         span {
             color:$color-primary-light;
@@ -21,7 +21,7 @@
     }
 
     &__paragraph{
-        font-size:1.6rem;
+        font-size:1.5rem;
     }
 
     &__social {
@@ -41,16 +41,16 @@
     }
 
     &__item {
-        margin-right:5rem;
-        
+        margin-right:3rem;
         list-style: none;
     }
 
     &__logo {
         transition: all .5s;
-        font-size :3rem;
+        font-size :3.5rem;
+
         &:hover {
-            color:$color-grey-dark-2;
+            color:$color-white;
             transform: scale(1.5);
         }
 

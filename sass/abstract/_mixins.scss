@@ -1,7 +1,27 @@
-@mixin clearfix {
-    &::after {
-        content: '';
-        display:table;
-        clear:both;
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == small-phone {
+        @media only screen and (max-width:26.25em) { @content }; /*= 420*/
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width:37.5em) { @content }; /*= 600px*/
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width:46.88em) { @content };/*= 750px*/
+    }
+
+    @if $breakpoint == tab-medium {
+        @media only screen and (max-width:51.25em) { @content };/*= 820px*/
+    }
+
+    
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width:63.75em) { @content };/*= 1020px*/
+    }
+
+    @if $breakpoint == largest {
+        @media only screen and (max-width:85em) { @content };/*= 1360px*/
     }
 }
