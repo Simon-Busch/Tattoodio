@@ -373,6 +373,11 @@
                 </div>
 
             </div>
+
+            <div class="button__pricing u-center-text">
+                <a href="#popup" class="btn btn--tertiary">Get a price ! &rarr;</a>  
+            </div>
+            
         </section>
 
         <section class="contact">
@@ -446,6 +451,67 @@
                 </div> 
             </div>
         </section>
+
+        <div class="popup" id="popup">
+
+            <div class="popup__box">
+                <a href="#pricing" class="popup__close">&times;</a>
+                <div class="popup__heading">
+                    <h2 class="heading-popup">Get your quote !</h2>
+                </div>
+
+                <div class="popup__calc">
+                    <div class="popup__form--group">
+                        <label for="height" class="popup__label">Height (cm)</label>
+                        <input type="number" class="popup__input" placeholder="Enter height" id="height" required>
+                    </div>
+                    <div class="popup__form--group">
+                        <label for="width" class="popup__label">Width (cm)</label>
+                        <input type="number" class="popup__input" placeholder="Enter width" id="width" required>
+                    </div>
+
+                    <div class="popup__form--group popup__form--group--radio">
+                        <div class="popup__form--radio">
+                            <input type="radio" class="popup__radio--input" id="black" name="pricing">
+                            <label for="black" class="popup__radio--label">
+                                <span class="popup__radio--button"></span>
+                                Black and grey
+                            </label>
+                        </div>
+
+                        <div class="popup__form--radio">
+                            <input type="radio" class="popup__radio--input" id="color" name="pricing">
+                            <label for="color" class="popup__radio--label">
+                                <span class="popup__radio--button"></span>
+                                Colors
+                            </label>
+                        </div>
+
+                        <div class="popup__form--radio">
+                            <input type="radio" class="popup__radio--input" id="shades" name="pricing">
+                            <label for="shades" class="popup__radio--label">
+                                <span class="popup__radio--button"></span>
+                                Shades
+                            </label>
+                        </div>
+
+                        <div class="popup__form--radio">
+                            <input type="radio" class="popup__radio--input" id="traditional" name="pricing">
+                            <label for="traditional" class="popup__radio--label">
+                                <span class="popup__radio--button"></span>
+                                traditional
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="popup__price u-center-text">
+                        <h4 class="popup__price--heading">Approx. price :</h4>
+                        <span class="popup__value">9.000$</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <footer class="footer">
             <div class="footer__copyright">

@@ -29,3 +29,10 @@
         @media only screen and (max-width:85em) { @content };/*= 1360px*/
     }
 }
+
+@mixin absoluteCenter {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}

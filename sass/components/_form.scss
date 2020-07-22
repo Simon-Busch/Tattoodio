@@ -112,11 +112,11 @@
 
             &-label {
                 cursor: pointer;
-                font-size: inherit;
-                position: relative;
-                padding-left: 4.5rem;
-                line-height: 3;
-                transition: all .5s;
+                        font-size: inherit;
+                        position: relative;
+                        padding-left: 4.5rem;
+                        line-height: 3;
+                        transition: all .5s;
 
                 &:hover {
                     color:$color-primary;

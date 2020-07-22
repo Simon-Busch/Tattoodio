@@ -1,0 +1,222 @@
+.popup {
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba($color-black,.8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s;
+
+    /*GRACEFUL DEGRADATION
+    IF the feature is supported, then it's applied*/
+    @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black,.3);
+    } 
+    
+
+    &__heading {
+        padding-top: 4rem;
+    }
+
+    //popup box
+    &__box {
+        display:flex;
+        flex-direction: column;
+        opacity: 0;
+        @include absoluteCenter;
+        background-color: $color-primary;
+        width: 65%;
+        height: 65vh;
+        overflow: hidden;
+        transition: all 1.2s .2s ease;
+        border-radius: 5px;
+
+        @include respond(largest) {
+            height: 75vh;
+        }
+
+        @include respond(tab-land) {
+            height:63vh;
+        }
+
+        @include respond(tab-port) {
+            width: 75%;
+            height:65vh;
+        }
+
+        @include respond(phone) {
+            height:50vh;
+        }
+
+        @include respond(phone) {
+            width:80%;
+            height:75vh;
+        }
+    }
+
+    //open popup
+    &:target {
+        opacity: 1;
+        visibility: visible;
+        /*the popup appears*/
+    }
+    //open popup    
+    &:target &__box { /*moment when the popup become the target*/
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    //close popup
+    &__close {
+        &:link,
+        &:visited {
+            color:$color-grey-dark;
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            line-height: 1; /*set to 1 because the default value is heigher and create an offset*/
+            font-size: 4rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .5s;
+        }
+
+        &:hover {
+            color: $color-grey-light-2;
+            transform: scale(1.2);
+        }
+
+    }
+
+
+    &__calc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__label {
+        font-size:1.4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        color:$color-primary;
+        font-family: inherit;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        border:none;
+        display: block;
+        background-color: $color-grey-light-1;
+        border-radius: 5px;
+        //margin-left:2rem;
+        transition: all .5s;
+        //margin: 0 auto;
+        width:30vh;
+
+        &:focus {
+            outline: none;
+            border: 3px solid $color-primary-light;
+            transform: scale(1.08);
+        }
+
+        &:focus:invalid { 
+            border-bottom: 2px solid red;
+        }
+    }
+
+
+    //radio button
+
+    &__form--radio {
+        padding: 2rem;
+        @include respond(phone) {
+            padding:1rem;
+        }
+    }
+
+    &__radio--input {
+        display:none;
+        position: absolute;
+    }
+
+    &__radio--label {
+        cursor: pointer;
+        font-size: inherit;
+        position: relative;
+        padding-left: 4.5rem;
+        line-height: 3;
+        transition: all .5s;
+
+        &:not(:last-child) {
+            padding-right: 2rem;
+        }
+
+        &:hover {
+            color:$color-primary-light;
+            transform: scale(1.2);
+            font-weight: 400;
+        }
+
+    }
+
+    &__radio--button {
+        height: 3rem;
+        width: 3rem;
+        border: 4px solid $color-primary-light;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -.3rem;
+        padding: 1rem;
+        transition: all .5s linear;
+
+        &::after{
+            content:"";
+            display:block;
+            height:1.3rem;
+            width:1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background-color: $color-primary-light;
+            opacity: 0;
+            transition: all .4s;
+
+            @include respond(phone) {
+                left:45%;
+            }
+        }
+
+    }
+
+    &__form--group{
+
+        padding:1rem 0 1.5rem 0;
+        @include respond(phone) {
+            padding: 1.2rem;
+        }
+
+        &--radio {
+            display:flex;
+            flex-direction: row;
+
+            @include respond(phone) {
+                flex-direction: column;
+            }
+        }
+    }
+    input[type=radio]:checked ~ .popup__radio--label .popup__radio--button::after{
+        opacity: 1;
+    }
+}
