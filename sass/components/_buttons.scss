@@ -27,6 +27,10 @@
         &:hover {
             animation: BounceBtn .6s;
         }
+
+        @include respond(super-small-phone) {
+            margin-top:0;
+        }
     }
 
     &--primary {

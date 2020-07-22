@@ -15,6 +15,12 @@
         -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
             clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
     }
+
+    @include respond(super-small-phone) {
+        padding-top: 3rem;
+        -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+            clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+    }
     
    /* &__bg-img{
         width:100%;

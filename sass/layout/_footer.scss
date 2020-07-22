@@ -5,6 +5,12 @@
     grid-template-columns: repeat(2,1fr);
     padding:2rem;
 
+    @include respond(super-small-phone) {
+        grid-template-rows: min-content;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
     &__copyright {
         align-self: center;
         justify-self: left;
@@ -43,6 +49,11 @@
     &__item {
         margin-right:3rem;
         list-style: none;
+
+        @include respond(super-small-phone) {
+            padding-top: 2rem;
+            margin: 0 auto;
+        }
     }
 
     &__logo {

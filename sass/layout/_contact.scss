@@ -15,25 +15,17 @@
                     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 
                 margin-top:-8rem;
-                
+            }
+
+            @include respond(super-small-phone) {
+                margin-top:-11rem;
             }
 
     &__box {
         display: grid;
-        grid-template-rows: 70vh;
+        grid-template-rows: min-content;
         grid-template-columns: [empty-start]1fr[empty-end form-start]50%[form-end picture-start] 40%[picture-end side-start] 1fr [side-end] ;
         
-        @include respond(tab-land) {
-            grid-template-rows: 50vh;
-        }
-
-        @include respond(tab-port) {
-            grid-template-rows: 55vh;
-        }
-
-        @include respond(phone) {
-            grid-template-rows: 45vh;
-        }
 
         @include respond(small-phone) {
             display:flex;
@@ -61,7 +53,7 @@
         }
 
         &--picture {
-            background-color:pink;
+            //background-color:pink;
             grid-column: picture-start/ picture-end;
             overflow: hidden;
             

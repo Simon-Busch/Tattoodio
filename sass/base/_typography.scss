@@ -3,6 +3,11 @@
     display:block;
     backface-visibility: hidden;
 
+    @include respond(super-small-phone) {
+        margin-top: 20rem;
+        
+    }
+
     &--main {
         letter-spacing: 4rem;
         font-size: 4.5rem;

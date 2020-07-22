@@ -17,6 +17,10 @@
         height:50vh;
     }
 
+    @include respond(super-small-phone) {
+        height: 70vh;
+    }
+
     
 
     &__logobox {
@@ -44,6 +48,10 @@
         top:50%; 
         left:50%;
         transform: translate(-50%,-50%);
+
+        @include respond(super-small-phone) {
+            top:37%;
+        }
     }
 
 }
