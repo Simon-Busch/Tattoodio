@@ -154,6 +154,10 @@
                     background-color: $color-primary;
                     opacity: 0;
                     transition: all .4s;
+
+                    @include respond(tab-port) {
+                        //height: 4rem;
+                    }
                 }
             }
         }

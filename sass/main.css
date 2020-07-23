@@ -301,6 +301,7 @@ body {
   -webkit-transition: all .6s ease;
   transition: all .6s ease;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .heading-popup:hover {
@@ -557,6 +558,7 @@ body {
   /*= 1020px*/
   /*= 750px*/
   /*= 600px*/
+  /*= 420*/
   /*= 300*/
 }
 
@@ -584,10 +586,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 26.25em) {
+  .popup__box {
+    height: 78vh;
+  }
+}
+
 @media only screen and (max-width: 18.75em) {
   .popup__box {
     width: 80%;
-    height: 82vh;
+    height: 80vh;
   }
 }
 
@@ -609,9 +617,9 @@ body {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
-  line-height: 1;
+  line-height: .5;
   /*set to 1 because the default value is heigher and create an offset*/
-  font-size: 4rem;
+  font-size: 5rem;
   text-decoration: none;
   display: inline-block;
   -webkit-transition: all .5s;
@@ -786,6 +794,13 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   padding-top: 2.5rem;
+  /*= 420*/
+}
+
+@media only screen and (max-width: 26.25em) {
+  .button__popup {
+    padding-top: 3rem;
+  }
 }
 
 .btn, .btn:link, .btn:visited {
@@ -1056,6 +1071,7 @@ body {
   opacity: 0;
   -webkit-transition: all .4s;
   transition: all .4s;
+  /*= 750px*/
 }
 
 .contact__form .form__textarea {
