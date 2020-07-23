@@ -529,7 +529,7 @@ body {
 }
 
 .popup__heading {
-  padding-top: 4rem;
+  padding-top: 1.5rem;
 }
 
 .popup__box {
@@ -557,38 +557,37 @@ body {
   /*= 1020px*/
   /*= 750px*/
   /*= 600px*/
-  /*= 600px*/
+  /*= 300*/
 }
 
 @media only screen and (max-width: 85em) {
   .popup__box {
-    height: 75vh;
+    height: 85vh;
   }
 }
 
 @media only screen and (max-width: 63.75em) {
   .popup__box {
-    height: 63vh;
+    height: 70vh;
   }
 }
 
 @media only screen and (max-width: 46.88em) {
   .popup__box {
     width: 75%;
-    height: 65vh;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .popup__box {
-    height: 50vh;
+    height: 74vh;
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 18.75em) {
   .popup__box {
     width: 80%;
-    height: 75vh;
+    height: 82vh;
   }
 }
 
@@ -782,6 +781,13 @@ body {
   opacity: 1;
 }
 
+.button__popup {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 2.5rem;
+}
+
 .btn, .btn:link, .btn:visited {
   font-size: 1.6rem;
   letter-spacing: .4rem;
@@ -801,15 +807,15 @@ body {
   border-radius: 5rem;
   -webkit-transition: all 1s;
   transition: all 1s;
-  -webkit-animation: moveInleft 1s ease-in;
-          animation: moveInleft 1s ease-in;
+  -webkit-animation: moveInleft .6s ease-in;
+          animation: moveInleft .6s ease-in;
   margin-top: 8rem;
   /*= 300*/
 }
 
 .btn--black:hover {
-  -webkit-animation: BounceBtn .6s;
-          animation: BounceBtn .6s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media only screen and (max-width: 18.75em) {
@@ -864,7 +870,7 @@ body {
 }
 
 .button__pricing {
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .contact__form .form__group {
@@ -1402,18 +1408,6 @@ body {
       justify-self: left;
 }
 
-.footer__copyright span {
-  color: #a8abad;
-  font-weight: 400;
-  text-transform: uppercase;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.footer__copyright span:hover {
-  font-size: 3rem;
-}
-
 .footer__paragraph {
   font-size: 1.5rem;
 }
@@ -1434,8 +1428,23 @@ body {
 }
 
 .footer__link:link, .footer__link:visited {
+  text-decoration: none;
   color: #a8abad;
   font-size: 3rem;
+}
+
+.footer__simon:link, .footer__simon:visited {
+  text-decoration: none;
+  color: #a8abad;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer__simon:link:hover, .footer__simon:visited:hover {
+  font-size: 2.5rem;
 }
 
 .footer__item {

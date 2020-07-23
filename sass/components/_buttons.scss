@@ -21,11 +21,11 @@
         border: 1px solid $color-white;
         border-radius: 5rem;
         transition: all 1s;
-        animation: moveInleft 1s ease-in;
+        animation: moveInleft .6s ease-in;
         margin-top: 8rem;
 
         &:hover {
-            animation: BounceBtn .6s;
+            transform: scale(1.2);
         }
 
         @include respond(super-small-phone) {
@@ -72,6 +72,5 @@
     }
 }
 .button__pricing {
-    padding-top: 3rem;
-
+    padding-top: 1rem;
 }

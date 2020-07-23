@@ -15,15 +15,7 @@
         align-self: center;
         justify-self: left;
 
-        span {
-            color:$color-primary-light;
-            font-weight: 400;
-            text-transform: uppercase;
-            transition: all .5s;
-            &:hover{
-                font-size: 3rem;
-            }
-        }
+        
     }
 
     &__paragraph{
@@ -41,9 +33,23 @@
 
     &__link:link,
     &__link:visited {
-        //text-decoration: none;
+        text-decoration: none;
         color: $color-primary-light;
         font-size: 3rem;
+    }
+
+    &__simon:link,
+    &__simon:visited {
+        text-decoration: none;
+        color:$color-primary-light;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: all .5s;
+
+        &:hover{
+            font-size:2.5rem;
+        }
     }
 
     &__item {

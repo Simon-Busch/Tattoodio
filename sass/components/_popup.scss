@@ -20,7 +20,7 @@
     
 
     &__heading {
-        padding-top: 4rem;
+        padding-top: 1.5rem;
     }
 
     //popup box
@@ -37,25 +37,24 @@
         border-radius: 5px;
 
         @include respond(largest) {
-            height: 75vh;
+            height: 85vh;
         }
 
         @include respond(tab-land) {
-            height:63vh;
+            height:70vh;
         }
 
         @include respond(tab-port) {
             width: 75%;
-            height:65vh;
         }
 
         @include respond(phone) {
-            height:50vh;
+            height:74vh;
         }
 
-        @include respond(phone) {
+        @include respond(super-small-phone) {
             width:80%;
-            height:75vh;
+            height:82vh;
         }
     }
 
@@ -216,7 +215,12 @@
             }
         }
     }
+    
     input[type=radio]:checked ~ .popup__radio--label .popup__radio--button::after{
         opacity: 1;
     }
+}
+.button__popup {
+    align-self: center;
+    padding-top: 2.5rem;
 }

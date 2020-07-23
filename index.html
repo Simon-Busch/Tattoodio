@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!--Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>    
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <!--CSS sheet-->
     <link rel="stylesheet" href="sass/main.css">
-
+    
     <title>Tattoodio</title>
 </head>
 
@@ -50,7 +54,7 @@
                 <span class="heading-primary--main">Tattoodio</span>
                 <span class="heading-primary--sub">Find your artist</span>
             </h1>
-            <a href="#" class="btn btn--black">Ink me</a>
+            <a href="#popup" class="btn btn--black">Ink me</a>
         </div>
     </header>
 
@@ -463,24 +467,24 @@
                 <div class="popup__calc">
                     <div class="popup__form--group">
                         <label for="height" class="popup__label">Height (cm)</label>
-                        <input type="number" class="popup__input" placeholder="Enter height" id="height" required>
+                        <input type="number" class="popup__input popup__input--height" placeholder="Enter height" id="height" required>
                     </div>
                     <div class="popup__form--group">
                         <label for="width" class="popup__label">Width (cm)</label>
-                        <input type="number" class="popup__input" placeholder="Enter width" id="width" required>
+                        <input type="number" class="popup__input popup__input--width" placeholder="Enter width" id="width" required>
                     </div>
 
                     <div class="popup__form--group popup__form--group--radio">
                         <div class="popup__form--radio">
-                            <input type="radio" class="popup__radio--input" id="black" name="pricing">
-                            <label for="black" class="popup__radio--label">
+                            <input type="radio" class="popup__radio--input radio__blackAndGrey" id="blackAndGrey" name="pricing">
+                            <label for="blackAndGrey" class="popup__radio--label">
                                 <span class="popup__radio--button"></span>
-                                Black and grey
+                                Black and Grey
                             </label>
                         </div>
 
                         <div class="popup__form--radio">
-                            <input type="radio" class="popup__radio--input" id="color" name="pricing">
+                            <input type="radio" class="popup__radio--input radio__colors" id="color" name="pricing">
                             <label for="color" class="popup__radio--label">
                                 <span class="popup__radio--button"></span>
                                 Colors
@@ -488,7 +492,7 @@
                         </div>
 
                         <div class="popup__form--radio">
-                            <input type="radio" class="popup__radio--input" id="shades" name="pricing">
+                            <input type="radio" class="popup__radio--input radio__shades" id="shades" name="pricing">
                             <label for="shades" class="popup__radio--label">
                                 <span class="popup__radio--button"></span>
                                 Shades
@@ -496,18 +500,22 @@
                         </div>
 
                         <div class="popup__form--radio">
-                            <input type="radio" class="popup__radio--input" id="traditional" name="pricing">
+                            <input type="radio" class="popup__radio--input radio__traditionnal" id="traditional" name="pricing">
                             <label for="traditional" class="popup__radio--label">
                                 <span class="popup__radio--button"></span>
-                                traditional
+                                Traditionnal
                             </label>
                         </div>
                     </div>
 
                     <div class="popup__price u-center-text">
                         <h4 class="popup__price--heading">Approx. price :</h4>
-                        <span class="popup__value">9.000$</span>
+                        <!--<span class="popup__value">0$</span>-->
                     </div>
+                </div>
+
+                <div class="button__popup u-center-text">
+                    <a href="#popup" class="btn btn--tertiary" onclick="UIupdate()">Get a price ! &rarr;</a>  
                 </div>
 
             </div>
@@ -515,7 +523,7 @@
 
         <footer class="footer">
             <div class="footer__copyright">
-                <p class="footer__paragraph"> &copy; Developped by <span>Simon Busch</span>, all credit goes to the creator.</p>
+                <p class="footer__paragraph"> &copy; Developped by <a href="https://github.com/Simon-Busch" target="_blank" class="footer__simon">Simon Busch</a>, all credit goes to the creator.</p>
             </div>
             <div class="footer__social">
                 <ul class="footer__flex">
@@ -528,15 +536,15 @@
             </div>
         </footer>
     </main>
+    
+    <!--icons-->
+    <!--<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>-->
+    
+    <script src="js/main.js"></script>
 
-
-  
-    
-    
-    
-    
-    
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script>
+        
+    </script>
 </body>
 
 </html>
