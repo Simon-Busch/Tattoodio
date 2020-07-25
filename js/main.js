@@ -68,7 +68,19 @@ function calcPrice () {
     return finalPrice;
 }
 
+
+function clearInput() {
+    document.querySelector('.popup__price--heading').parentElement.removeChild;
+    console.log("test");
+}
+
+
 function UIupdate() {
+    clearInput();
+    /*function clearField () {
+
+    };*/
+
     let element = DOMstrings.value;
     let newPrice = calcPrice();
     //let html = document.querySelector('.popup__price').innerHTML;

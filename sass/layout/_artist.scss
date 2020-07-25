@@ -23,6 +23,7 @@
         grid-template-columns: repeat(auto-fit,(minmax(30rem,1fr)));
         grid-gap: 4rem;
         grid-auto-rows: 51rem;
+        //opacity: 0;
     }
 
     &__heading {
