@@ -669,7 +669,7 @@ body {
           transform: translate(-50%, -50%);
   background-color: #454b51;
   width: 65%;
-  height: 65vh;
+  height: 75vh;
   overflow: hidden;
   -webkit-transition: all 1.2s .2s ease;
   transition: all 1.2s .2s ease;
@@ -1003,7 +1003,7 @@ body {
 }
 
 .button__pricing {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .contact__form .form__group {
@@ -1973,7 +1973,7 @@ body {
   -webkit-clip-path: polygon(0 10%, 100% 90%, 100% 90%, 0 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   padding-top: 8rem;
-  margin-top: -8rem;
+  margin-top: -9rem;
   /*= 1360px*/
   /*= 600px*/
   height: 100%;

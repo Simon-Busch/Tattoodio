@@ -1,6 +1,12 @@
 $(document).ready(function() {
-    //Animation on scroll
 
+    $('.js--wp-1').waypoint(function(direction) {
+        $('.js--wp-1').addClass('animated fadeIn');
+    }, {
+        offset:'50%'
+    });
+
+    //Animation on scroll
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
         if (scroll >= 300) {
@@ -26,6 +32,13 @@ $(document).ready(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 300) {
             $(".js--anim-4").addClass("BounceBtn");
+        }
+    });
+
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 3000) {
+            $(".js--anim-5").addClass("moveInBottom");
         }
     });
 })

@@ -3,7 +3,7 @@
     -webkit-clip-path: polygon(0 10%, 100% 90%, 100% 90%, 0 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     padding-top: 8rem;
-    margin-top:-8rem;
+    margin-top:-9rem;
     @include respond(largest) {
         margin-top:-12rem;
     }
