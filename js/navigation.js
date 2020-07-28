@@ -1,3 +1,5 @@
+// nav on scroll
+
 $(document).ready(function() {
 
     $('.js--scroll-to-artist').click(function() {
