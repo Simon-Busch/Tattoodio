@@ -63,12 +63,19 @@ function calcPrice () {
 
 
 // function clearInput() {
-//     document.querySelector('.popup__price--heading').parentElement.removeChild;
+//     d
 //     console.log("test");
 // }
 
 
 function UIupdate() {
+
+    // let clearInput = function () {
+    //     console.log('test');
+    //     document.querySelector('.popup__price--heading').parentElement.removeChild;
+    // };
+    
+    // clearInput();
     
     let element = DOMstrings.value;
     let newPrice = calcPrice();
@@ -78,6 +85,8 @@ function UIupdate() {
 }
 
 let controller = (function () {
+
+
     document.querySelector('.btn--UI').addEventListener('click', UIupdate);
     
     document.addEventListener('keypress', function (event) {
@@ -88,52 +97,5 @@ let controller = (function () {
         }
     })
 })();
-
-/*
-let setupEventListener =  function () {
-    document.querySelector(DOMstrings.button).addEventListener('click', UIupdate);
-}
-*/
-/*
-class Calc {
-
-    heightPrice (height){
-        const price = (minPrice*1.05)*(height/10);
-        console.log(price);
-
-    };  
-
-    widthPrice (width){
-        const price = (minPrice * 1.05) *(width/10);
-        return price;
-    }; 
-
-    dimension (h,w) {
-        h = heightPrice(h);
-        w = widthPrice(w);
-        const dimensionPrice = h * w;
-        return dimensionPrice;
-    };
-
-    finalPrice (h,w) {
-    
-        //console.log(dimension(h,w));
-    
-        let price;
-    
-        if (blackAndGrey) {
-            price = (minPrice * (dimension(h,w))) + needleCost + otherCosts;
-            console.log(price);
-        } else if (color || shades) {
-            price = (minPrice * (dimension(h,w)) * 1.5) + needleCost + otherCosts;
-            console.log(price);
-        } else if (traditionnal) {
-            price = (minPrice * (dimension(h,w)) * 2) + needleCost + otherCosts;
-            console.log(price);
-        }
-    
-    };
-};
-*/
 
 
