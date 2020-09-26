@@ -16,13 +16,6 @@ const needleCost = 20;
 const otherCosts = 25; 
 
 
-/*
-console.log(`the value of radio button for black and grey is ${blackAndGrey}`);
-console.log(`the value of radio button for color is ${color}`);
-console.log(`the value of radio button for shades is ${shades}`);
-console.log(`the value of radio button for traditionnal is ${traditionnal}`);
-*/
-
 function getHeight() {
     let height = parseFloat(document.querySelector(DOMstrings.inputHeight).value);
     return height;

@@ -65,9 +65,9 @@
     //open popup
     &:target {
         opacity: 1;
-        visibility: visible;
-        /*the popup appears*/
+        visibility: visible; /*the popup appears*/
     }
+    
     //open popup    
     &:target &__box { /*moment when the popup become the target*/
         opacity: 1;
@@ -82,7 +82,7 @@
             position: absolute;
             top: 1rem;
             right: 1.5rem;
-            line-height: .5; /*set to 1 because the default value is heigher and create an offset*/
+            line-height: 1; /*set to 1 because the default value is heigher and create an offset*/
             font-size: 5rem;
             text-decoration: none;
             display: inline-block;
