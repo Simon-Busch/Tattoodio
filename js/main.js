@@ -69,26 +69,32 @@ function calcPrice () {
 }
 
 
-function clearInput() {
-    document.querySelector('.popup__price--heading').parentElement.removeChild;
-    console.log("test");
-}
+// function clearInput() {
+//     document.querySelector('.popup__price--heading').parentElement.removeChild;
+//     console.log("test");
+// }
 
 
 function UIupdate() {
-    clearInput();
-    /*function clearField () {
-
-    };*/
-
+    
     let element = DOMstrings.value;
     let newPrice = calcPrice();
-    //let html = document.querySelector('.popup__price').innerHTML;
     let newHtml = `<span class="popup__value">${newPrice}$</span>`
-    //console.log(html);
-    //console.log(newHtml);
+
     document.querySelector('.popup__price--heading').insertAdjacentHTML('afterend',newHtml);
 }
+
+let controller = (function () {
+    document.querySelector('.btn--UI').addEventListener('click', UIupdate);
+    
+    document.addEventListener('keypress', function (event) {
+
+        if (event.keyCode === 13 || event.which === 13) {
+            //console.log('banane');
+            UIupdate();
+        }
+    })
+})();
 
 /*
 let setupEventListener =  function () {
