@@ -5,7 +5,7 @@ const DOMstrings = {
     radioTraditionnal: '.radio__traditionnal',
     inputHeight: '.popup__input--height',
     inputWidth: '.popup__input--width',
-    value: '.popup__value',
+    price: '.popup__value',
     button: '.button__popup'
 };
 
@@ -19,12 +19,12 @@ const otherCosts = 25;
 function getHeight() {
     let height = parseFloat(document.querySelector(DOMstrings.inputHeight).value);
     return height;
-}
+};
 
 function getWidth() {
     let width = parseFloat(document.querySelector(DOMstrings.inputWidth).value);
     return width;
-}
+};
 
 function getRadio () {
 
@@ -46,7 +46,7 @@ function getRadio () {
         return traditionnal;
         //console.log(traditionnal);
     }
-}
+};
 
 
 function calcPrice () {
@@ -59,36 +59,47 @@ function calcPrice () {
     let finalPrice = Math.floor((height*width)*(minPrice*radio) + needleCost + otherCosts);
     //console.log(finalPrice);
     return finalPrice;
-}
+};
 
+function clearFields () {
+    var fields, fieldsArr;
+    fields = document.querySelectorAll(DOMstrings.inputHeight + ', ' + DOMstrings.inputWidth);
+    
 
-// function clearInput() {
-//     d
-//     console.log("test");
-// }
+    fieldsArr = Array.prototype.slice.call(fields);
 
+    fieldsArr.forEach((current,index,array) => {
+        current.value="";
+    });
+};
+
+function clearPrice () {
+    //document.querySelector(DOMstrings.price).parentElement.removeChild(DOMstrings.price);
+    var priceField = document.querySelector('.popup__price');
+    priceField.removeChild(priceField.lastElementChild);
+    console.log('banana');
+};
 
 function UIupdate() {
-
-    // let clearInput = function () {
-    //     console.log('test');
-    //     document.querySelector('.popup__price--heading').parentElement.removeChild;
-    // };
     
-    // clearInput();
-    
-    let element = DOMstrings.value;
+    let element = DOMstrings.price;
     let newPrice = calcPrice();
     let newHtml = `<span class="popup__value">${newPrice}$</span>`
 
     document.querySelector('.popup__price--heading').insertAdjacentHTML('afterend',newHtml);
-}
+
+    clearFields();
+    
+};
 
 let controller = (function () {
 
 
     document.querySelector('.btn--UI').addEventListener('click', UIupdate);
+
     
+
+
     document.addEventListener('keypress', function (event) {
 
         if (event.keyCode === 13 || event.which === 13) {
@@ -96,6 +107,7 @@ let controller = (function () {
             UIupdate();
         }
     })
+
 })();
 
 
