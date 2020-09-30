@@ -70,7 +70,7 @@ function clearFields () {
 
     fieldsArr.forEach((current,index,array) => {
         current.value="";
-    })
+    });
 };
 
 function clearPrice () {
