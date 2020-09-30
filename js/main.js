@@ -6,10 +6,11 @@ const DOMstrings = {
     inputHeight: '.popup__input--height',
     inputWidth: '.popup__input--width',
     price: '.popup__value',
-    button: '.button__popup'
+    button: '.button__popup',
+    priceHeading:'.popup__price--heading'
 };
 
-const minPrice, needleCost,otherCosts;
+let minPrice, needleCost, otherCosts;
 minPrice = 4.5;
 needleCost = 20;
 otherCosts = 25; 
@@ -58,31 +59,25 @@ function calcPrice () {
 function clearFields () {
     var fields, fieldsArr;
     fields = document.querySelectorAll(DOMstrings.inputHeight + ', ' + DOMstrings.inputWidth);
-    
 
     fieldsArr = Array.prototype.slice.call(fields);
 
-    fieldsArr.forEach((current,index,array) => {
+    fieldsArr.forEach((current) => {
         current.value="";
     });
-};
 
-function clearPrice () {
-    var priceField = document.querySelector('.popup__price');
-    priceField.removeChild(priceField.lastElementChild);
-    console.log('banana');
 };
 
 function UIupdate() {
     
-    let element = DOMstrings.price;
+    let html = DOMstrings.price;
     let newPrice = calcPrice();
-    let newHtml = `<span class="popup__value">${newPrice}$</span>`
 
-    document.querySelector('.popup__price--heading').insertAdjacentHTML('afterend',newHtml);
+    if (newPrice>0) {
+        document.querySelector(DOMstrings.price).innerHTML = `<span class="popup__value">${newPrice}$</span>`;
+        clearFields();
+    }
 
-    clearFields();
-    
 };
 
 let controller = (function () {
