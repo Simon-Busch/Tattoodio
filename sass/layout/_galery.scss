@@ -71,7 +71,7 @@
             overflow: hidden;
             
             &:hover{
-                transform: scale(1.03) rotate(1deg);
+                transform: scale(1.03);
             }
         }
     }
@@ -79,6 +79,7 @@
     &_photo {
         height:100%;
         width: 100%;
+        object-fit: cover;
         
 
         opacity: .7;

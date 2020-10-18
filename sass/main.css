@@ -1710,13 +1710,15 @@ body {
 }
 
 .galery__box--1:hover, .galery__box--2:hover, .galery__box--3:hover, .galery__box--4:hover, .galery__box--5:hover, .galery__box--6:hover, .galery__box--7:hover, .galery__box--8:hover, .galery__box--9:hover, .galery__box--10:hover, .galery__box--11:hover {
-  -webkit-transform: scale(1.03) rotate(1deg);
-          transform: scale(1.03) rotate(1deg);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .galery_photo {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: .7;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
