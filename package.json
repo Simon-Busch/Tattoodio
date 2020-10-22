@@ -1,7 +1,7 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "author": "",
+  "author": "Simon Busch",
   "description": "Tattoodio",
   "main": "js/main.js",
   "scripts": {

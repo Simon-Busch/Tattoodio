@@ -1652,6 +1652,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   grid-auto-flow: column dense;
+  /*= 600px*/
   /*
         grid-template-rows: repeat(5, 40rem);
         grid-template-columns: repeat(auto-fit, (minmax(1fr, 30rem)));
@@ -1661,6 +1662,12 @@ body {
         justify-content: space-evenly;
         grid-auto-flow: row;
         */
+}
+
+@media only screen and (max-width: 37.5em) {
+  .galery__box {
+    grid-auto-rows: 17rem;
+  }
 }
 
 .galery__box--4 {

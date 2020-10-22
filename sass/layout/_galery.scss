@@ -33,7 +33,9 @@
         justify-content: space-evenly;
         grid-auto-flow: column dense;
         
-        
+        @include respond(phone) {
+            grid-auto-rows:17rem;
+        }
 
         /*
         grid-template-rows: repeat(5, 40rem);
