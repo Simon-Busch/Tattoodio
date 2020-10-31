@@ -7,8 +7,17 @@ const DOMstrings = {
     inputWidth: '.popup__input--width',
     price: '.popup__value',
     button: '.button__popup',
-    priceHeading:'.popup__price--heading'
+    priceHeading:'.popup__price--heading',
+    checkbox : '.navigation__checkbox',
+    navLink: '.navigation__link'
 };
+
+function closePopup () {
+    document.querySelector(DOMstrings.navLink).addEventListener('click', function () {
+        //toggle checkbox
+        DOMstrings.checkbox = false ;
+    }
+)};
 
 let minPrice, needleCost, otherCosts;
 minPrice = 4.5;
